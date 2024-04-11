@@ -1,3 +1,10 @@
+body{
+  background-color: #333;
+  color: white;
+}
+.taskName{
+  color: red;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +42,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-img{
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.main-img img{
+  max-width: 100%;
+}
+.thumbnails-container{
+  display: flex;
+  justify-content: center;
+}
+.thumbnails-container img{
+  width: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.thumbnails-container img.active {
+  border-color: gray; 
 }
